@@ -24,6 +24,7 @@
         android:layout_height="30dp"
         android:autofillHints="false"
         android:background="@color/lightgray"
+        android:textColor="#F0F0"
         android:ems="10"
         android:inputType="textPassword"
         android:textAlignment="textEnd"
@@ -51,6 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passone"
         app:layout_constraintVertical_bias="0.069"
         android:background="@color/lightgray"
+        android:textColor="#F0F0"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -58,6 +60,7 @@
         android:layout_width="199dp"
         android:layout_height="32dp"
         android:background="#40F0"
+        android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
         android:text=""
         android:textColor="#FF00"

@@ -11,7 +11,6 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    private PassCheck pcheck;
     private EditText onePass;
     private EditText twoPass;
     private TextView result;
@@ -19,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pcheck = new PassCheck("","");
         onePass = findViewById(R.id.passone);
         twoPass = findViewById(R.id.passtwo);
         result = findViewById(R.id.label);
@@ -28,10 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkBtn(View view){
 
-       pcheck.setPone(onePass.getText().toString());
-       pcheck.setPtwo(twoPass.getText().toString());
-
-       if (pcheck.compare()){
+       if (onePass.getText().toString().equals(twoPass.getText().toString())){
            result.setText("THANK YOU");
        }else{
            result.setText("PASSWORDS MUST MATCH");
